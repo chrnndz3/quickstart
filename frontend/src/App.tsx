@@ -8,6 +8,7 @@ import Context from "./Context";
 import styles from "./App.module.scss";
 import { CraCheckReportProduct } from "plaid";
 
+// Main class where all the sub features are called to be rendered in Index.tsx
 const App = () => {
   const { linkSuccess, isPaymentInitiation, itemId, dispatch } =
     useContext(Context);
@@ -132,6 +133,6 @@ const App = () => {
       </div>
     </div>
   );
-};
+}; // END OF APP
 
 export default App;
